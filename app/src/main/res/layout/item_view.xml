@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    android:id="@+id/cardview"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:singleLine="true"
+            android:id="@+id/nameTV"
+            android:textSize="20dp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="details"
+            android:singleLine="true"
+            android:id="@+id/detailsTV"
+            android:layout_below="@+id/nameTV"
+            android:textSize="17dp"
+            ></TextView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_action_edit"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/detailsTV"
+            android:id="@+id/editBtn"
+            android:layout_alignParentRight="true"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/deleteBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_action_delete_forever"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/detailsTV"
+            android:layout_toLeftOf="@+id/editBtn"
+            android:layout_marginRight="20dp"
+            ></ImageView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
