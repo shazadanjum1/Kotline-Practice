@@ -3,10 +3,12 @@ package com.kentae.kotlinepractice.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
+import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -42,7 +44,8 @@ class BottomNavActivity : AppCompatActivity() {
         //toolbar?.subtitle = "Sub"
         toolbar?.navigationIcon = ContextCompat.getDrawable(this,R.drawable.ic_action_menu)
         toolbar?.setNavigationOnClickListener {
-            drawerLayout.open();
+            //drawerLayout.open();
+            drawerLayout.openDrawer(GravityCompat.START)
         }
 
 
@@ -77,25 +80,31 @@ class BottomNavActivity : AppCompatActivity() {
         navigationView.setNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.items -> {
-                    drawerLayout.close()
+                    drawerLayout.closeDrawer(GravityCompat.START)
+                    //drawerLayout.close()
                     val intent = Intent(this@BottomNavActivity, ItemActivity::class.java);
                     startActivity(intent);
                 }
                 R.id.addItem -> {
-                    drawerLayout.close()
+                    drawerLayout.closeDrawer(GravityCompat.START)
                     val intent = Intent(this@BottomNavActivity, AddItemActivity::class.java);
                     intent.putExtra("mode", "add");
                     startActivity(intent);
                 }
                 R.id.notes -> {
-                    drawerLayout.close()
+                    drawerLayout.closeDrawer(GravityCompat.START)
                     val intent = Intent(this@BottomNavActivity, NoteActivity::class.java);
                     intent.putExtra("mode", "add");
                     startActivity(intent);
                 }
                 R.id.retrofit -> {
-                    drawerLayout.close()
+                    drawerLayout.closeDrawer(GravityCompat.START)
                     val intent = Intent(this@BottomNavActivity, RetofitApiCallActivity::class.java);
+                    startActivity(intent);
+                }
+                R.id.mvvm -> {
+                    drawerLayout.closeDrawer(GravityCompat.START)
+                    val intent = Intent(this@BottomNavActivity, MVVMActivity::class.java);
                     startActivity(intent);
                 }
             }

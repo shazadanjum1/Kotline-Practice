@@ -15,5 +15,9 @@
         android:id="@+id/retrofit"
         android:title="Retrofit" />
 
+    <item
+        android:id="@+id/mvvm"
+        android:title="MVVM" />
+
 
 </menu>
