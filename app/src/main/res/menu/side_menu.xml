@@ -11,5 +11,9 @@
         android:id="@+id/notes"
         android:title="Notes" />
 
+    <item
+        android:id="@+id/retrofit"
+        android:title="Retrofit" />
+
 
 </menu>

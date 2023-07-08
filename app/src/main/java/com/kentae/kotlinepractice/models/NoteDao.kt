@@ -1,7 +1,7 @@
-package com.ezatpanah.roomdatabase_youtube.db
+package com.kentae.kotlinepractice.models
 
 import androidx.room.*
-import com.ezatpanah.roomdatabase_youtube.utils.Constants.NOTE_TABLE
+import com.kentae.kotlinepractice.utils.Constants.NOTE_TABLE
 
 // It has to be noted that DAO file is created once.
 // We make the object of our database file and call below methods through Interface.

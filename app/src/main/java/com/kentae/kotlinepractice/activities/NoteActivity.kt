@@ -8,13 +8,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
-import com.ezatpanah.roomdatabase_youtube.db.NoteEntity
-import com.ezatpanah.roomdatabase_youtube.utils.Constants
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.kentae.kotlinepractice.R
-import com.kentae.kotlinepractice.adapters.ItemAdapter
 import com.kentae.kotlinepractice.adapters.NoteAdapter
 import com.kentae.kotlinepractice.database.NoteDatabase
+import com.kentae.kotlinepractice.models.NoteEntity
+import com.kentae.kotlinepractice.utils.Constants
 
 class NoteActivity : AppCompatActivity() {
 

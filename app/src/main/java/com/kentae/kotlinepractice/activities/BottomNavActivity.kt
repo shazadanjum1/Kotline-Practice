@@ -93,6 +93,11 @@ class BottomNavActivity : AppCompatActivity() {
                     intent.putExtra("mode", "add");
                     startActivity(intent);
                 }
+                R.id.retrofit -> {
+                    drawerLayout.close()
+                    val intent = Intent(this@BottomNavActivity, RetofitApiCallActivity::class.java);
+                    startActivity(intent);
+                }
             }
             true
         }

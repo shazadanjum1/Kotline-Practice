@@ -1,4 +1,4 @@
-package com.ezatpanah.roomdatabase_youtube.utils
+package com.kentae.kotlinepractice.utils
 
 object Constants {
     const val NOTE_TABLE= "note_table"

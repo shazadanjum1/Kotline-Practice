@@ -10,13 +10,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import com.ezatpanah.roomdatabase_youtube.db.NoteEntity
-import com.ezatpanah.roomdatabase_youtube.utils.Constants
 import com.kentae.kotlinepractice.models.ItemsModel
 import com.kentae.kotlinepractice.R
 import com.kentae.kotlinepractice.database.SQLiteDB
 import com.kentae.kotlinepractice.activities.AddItemActivity
 import com.kentae.kotlinepractice.activities.UpdateNoteActivity
+import com.kentae.kotlinepractice.models.NoteEntity
+import com.kentae.kotlinepractice.utils.Constants
 
 class NoteAdapter(private val mList: MutableList<NoteEntity>, private val context: Activity) : RecyclerView.Adapter<NoteAdapter.ViewHolder>() {
 

@@ -6,11 +6,11 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import androidx.room.Room
-import com.ezatpanah.roomdatabase_youtube.db.NoteEntity
-import com.ezatpanah.roomdatabase_youtube.utils.Constants
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.kentae.kotlinepractice.R
 import com.kentae.kotlinepractice.database.NoteDatabase
+import com.kentae.kotlinepractice.models.NoteEntity
+import com.kentae.kotlinepractice.utils.Constants
 
 class UpdateNoteActivity : AppCompatActivity() {
     // make an object of database to access the methods

@@ -1,9 +1,9 @@
-package com.ezatpanah.roomdatabase_youtube.db
+package com.kentae.kotlinepractice.models
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.ezatpanah.roomdatabase_youtube.utils.Constants.NOTE_TABLE
+import com.kentae.kotlinepractice.utils.Constants.NOTE_TABLE
 
 @Entity(tableName = NOTE_TABLE)
 data class NoteEntity(
